@@ -23,7 +23,7 @@
     "url": "https://zce.me"
   },
   "scripts": {
-    "format": "prettier --write **/*",
+    "format": "prettier --write **/*.md",
     "commit": "git-cz"
   },
   "husky": {
@@ -38,10 +38,6 @@
     ]
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ],
     "*.md": [
       "prettier --write",
       "git add"
@@ -51,6 +47,12 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
