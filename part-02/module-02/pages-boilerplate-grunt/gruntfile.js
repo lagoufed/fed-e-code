@@ -294,6 +294,7 @@ module.exports = function () {
     'htmlmin:production',
     'cssmin:production',
     'uglify:production',
+    // "bs",
     'clean:temp',
   ])
 
@@ -304,5 +305,5 @@ module.exports = function () {
     })
   })
 
-  grunt.registerTask('deploy', [isProduction ? 'start' : 'build', 'gh-pages'])
+  grunt.registerTask('deploy', ['build', 'gh-pages'])
 }
