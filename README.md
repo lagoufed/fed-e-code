@@ -1,5 +1,7 @@
 # fed-e-code
 
+训练营一期资料整合至：https://github.com/lagoufed/fed-e-code
+
 > 大前端高薪进阶训练营录播部分代码
 
 ## 目录结构说明
