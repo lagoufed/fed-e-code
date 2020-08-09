@@ -1,0 +1,32 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - lts/*
+
+cache:
+  yarn: true
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+install:
+  - yarn
+
+script:
+  - yarn lint
+  - yarn build --production
+
+# https://docs.travis-ci.com/user/deployment/pages/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  local_dir: dist
+  target_branch: gh-pages
+  on:
+    branch: master

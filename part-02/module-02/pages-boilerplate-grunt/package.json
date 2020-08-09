@@ -1,0 +1,81 @@
+{
+  "name": "pages-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Always a pleasure scaffolding your awesome static sites.",
+  "keywords": [
+    "pages-boilerplate",
+    "boilerplate",
+    "pages",
+    "zce"
+  ],
+  "homepage": "https://github.com/zce/pages-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/zce/pages-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/pages-boilerplate.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "zce",
+    "email": "w@zce.me",
+    "url": "https://zce.me"
+  },
+  "scripts": {
+    "clean": "grunt clean",
+    "lint": "grunt lint",
+    "compile": "grunt compile",
+    "serve": "grunt serve",
+    "build": "grunt build",
+    "start": "grunt start",
+    "deploy": "grunt deploy --production"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "jquery": "3.4.1",
+    "popper.js": "1.16.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "gh-pages": "^3.0.0",
+    "grunt": "^1.1.0",
+    "grunt-babel": "^8.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-eslint": "^23.0.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-stylelint": "^0.15.0",
+    "grunt-swig": "https://github.com/taixw2/grunt-swig",
+    "grunt-useref": "^0.0.16",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.6.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "optionalDependencies": {
+    "grunt-css": "^0.5.4"
+  }
+}

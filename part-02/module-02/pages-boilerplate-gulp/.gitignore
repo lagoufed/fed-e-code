@@ -1,0 +1,4 @@
+dist/
+*.log
+.publish
+.DS_Store
